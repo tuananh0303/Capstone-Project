@@ -1,11 +1,8 @@
-import HelloComponent from '@/components/HelloComponent'
+import { RouterProvider } from "react-router-dom";
+import { router } from "@/routers/index";
 
 const App = () => {
-  return (
-    <>
-      <HelloComponent />
-    </>
-  )
-}
+  return <RouterProvider router={router} />;
+};
 
-export default App
+export default App;
